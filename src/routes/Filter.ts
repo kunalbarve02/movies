@@ -1,6 +1,5 @@
-import * as expressModule from 'express';
-const ex = require('express');
-const route = ex.Router();
+import * as express from 'express';
+const route = express.Router();
 const { filterAndSort } = require('../controllers/Filter');
 
 route.get('/filter', filterAndSort)
