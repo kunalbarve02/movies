@@ -18,7 +18,7 @@ exports.postData = async (req:any, res:any) => {
     Data.find({})
         .then(async(data:any) => {
             if (data.length > 0) {
-                res.status(200).json({
+                res.status(409).json({
                     message: "Data already seeded"
                 })
             } else {
